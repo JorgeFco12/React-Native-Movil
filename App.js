@@ -1,11 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+import SignUp from './SignUp'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Login from './Login';
+import ForgotPass from './ForgotPass';
+import ChangePass from './ChangePass';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Login /> {}
     </View>
   );
 }
