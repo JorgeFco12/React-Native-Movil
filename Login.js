@@ -14,6 +14,7 @@ function Login() {
   };
 
   return (
+    <View style={styles.container}>
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Text style={styles.header}>Login</Text>
       <Image
@@ -60,10 +61,17 @@ function Login() {
         <Text style={{ color: 'blue', textDecorationLine: 'underline' }}>Contraseña olvidada?</Text>
       </Text>
     </View>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%',
+  },
   header: {
     fontSize: 24,
     fontWeight: 'bold',
@@ -85,11 +93,13 @@ const styles = StyleSheet.create({
     borderColor: 'black',
     padding: 10,
     marginBottom: 20,
-    width: 300,
+    width: '100%',
+    
   },
   input: {
     flex: 1,
     fontSize: 20,
+    
   },
   image: {
     width: 50,

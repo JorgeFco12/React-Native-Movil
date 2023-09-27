@@ -52,12 +52,12 @@ function ForgotPass() {
       <Button
         title="Send"
         onPress={sendPasswordResetEmail}
-        disabled={!email || error} // Deshabilita el botón si no hay correo o hay un error
+        disabled={!email || error} 
       />
 
-      <Text style={styles.loginText}>
+      <View style={styles.loginText}>
         <Text style={{ color: 'blue', textDecorationLine: 'underline' }}>Login?</Text>
-      </Text>
+      </View>
     </View>
   );
 }
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
     borderColor: 'black',
     padding: 10,
     marginBottom: 20,
-    width: 300,
+    width: '100%',
   },
   input: {
     flex: 1,
